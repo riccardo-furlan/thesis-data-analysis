@@ -32,7 +32,7 @@ end_str = end_date.strftime('%Y-%m-%d')
 plt.figure(figsize=(12, 6))
 # Price
 plt.plot(data.index, data['Close'], label='Close Price', color='blue', alpha=0.9, linewidth=1)
-# Bollinger bands
+# Keltner Channels
 plt.plot(data.index, data[upper_channel_col], label='Upper Channel', color='red', linestyle='--', linewidth=1)
 plt.plot(data.index, data[middle_channel_col], label='Middle Line (EMA)', color='black', linestyle='-.', linewidth=1, alpha=0.7)
 plt.plot(data.index, data[lower_channel_col], label='Lower Channel', color='green', linestyle='--', linewidth=1)
