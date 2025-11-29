@@ -11,7 +11,7 @@ ma_period = 14
 
 data = yf.download(ticker_symbol, start=start_date, end=end_date, auto_adjust=True)
 if data.empty:
-    print("Nessun dato trovato. Controlla il ticker o l'intervallo di date.")
+    print("No data found. Check ticker or date range.")
     exit()
 
 # Calculate RSI
